@@ -1,0 +1,245 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #cccccc;
+}
+
+/* Nav Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+h1 {
+    color: black;
+    -webkit-text-stroke: 1px yellow;
+}
+
+nav h1 {
+    color: white;
+    -webkit-text-stroke: 1px white;
+}
+
+nav h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+nav .nav-links ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 16px;
+}
+
+nav .nav-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    padding: 12px 24px;
+    border-radius: 100px;
+    border: none;
+    background-color: black;
+    color: white;
+
+}
+
+nav a button {
+    padding: 12px 24px;
+    border-radius: 100px;
+    background-color: white;
+    color: black;
+}
+
+.main {
+    padding: 10px 20px;
+    min-height: 80vh;
+}
+
+.main .heading-section {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid #bbbbbb;
+    padding: 10px 20px;
+}
+
+
+/* ########################## Landing Page ########################## */
+.hero-section {
+    height: 200vh;
+    position: relative;
+}
+
+.elevator {
+    position: fixed;
+    overflow: hidden;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+.door {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: #aaaaaa;
+    transition: transform 0.1s linear;
+}
+
+.left-door {
+    left: 0;
+    border-right: black solid 20px;
+}
+
+.right-door {
+    right: 0;
+    border-left: black solid 20px;
+}
+
+#header-text {
+    z-index: 50;
+    color: yellow;
+    position: absolute;
+    top: 10%;
+    left: 37%;
+    text-align: center;
+    font-size: xx-large;
+    opacity: 1;
+}
+
+#content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    padding: 2rem;
+    z-index: 1;
+    padding-top: 30%
+}
+
+.actors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+.actor-card {
+    width: 35%;
+}
+
+
+.actor-card img {
+    border-radius: 50%;
+    width: 70%;
+}
+
+.tagline {
+    background-color: black;
+    color: white;
+    padding: 2em;
+    text-align: center;
+}
+
+.highlight {
+    color: yellow;
+}
+
+
+
+/* ########################## Details Page ########################## */
+
+span {
+    margin: 16px
+}
+
+.details-section {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.details-section div {
+    margin-right: 220px;
+}
+
+.details-section ul li {
+    list-style: none;
+}
+
+hr {
+    border: 1px solid #bbbbbb;
+}
+
+/* ########################## Reviews Page ########################## */
+.heading-section .ratings {
+    display: inline-flex;
+    align-items: center;
+}
+
+.heading-section .ratings span {
+    display: inline-flex;
+    align-items: center;
+}
+
+.heading-section .ratings img {
+    width: 5em;
+    margin: 16px;
+}
+
+.reviews {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card {
+    border: 1px solid #aaaaaa;
+    padding: 32px;
+    margin: 32px;
+    min-width: 20em;
+    width: 25%;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px 0 #aaaaaa;
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.fade {
+    color: grey;
+}
+
+/* ########################## Watch Page ########################## */
+.watch-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
